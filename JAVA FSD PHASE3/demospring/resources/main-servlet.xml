@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- to work with annotation -->
+	<context:annotation-config></context:annotation-config>
+     
+     <!-- to scan the controller -->
+     <context:component-scan base-package="demo.spring.demospring"></context:component-scan>
+     
+     <bean id="startEventHandler" class="demo.spring.event.StartEventHandler"></bean>
+     <bean id="stopEventHandler" class="demo.spring.event.StopEventHandler"></bean>
+  <!-- custom event handling -->
+	 <bean id="cep" class="demo.spring.custom.CustomEventPublisher"></bean>
+	 <bean id="cel" class="demo.spring.custom.CustomEventListner"></bean>
+	 
+</beans>

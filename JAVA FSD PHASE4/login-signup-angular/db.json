@@ -1,0 +1,32 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 1
+    },
+    {
+      "fullname": "prashanth",
+      "email": "prash.spp@gmail.com",
+      "password": "prashanth123",
+      "mobile": 9655178490,
+      "id": 2
+    },
+    {
+      "fullname": "meera",
+      "email": "meera@gmail.com",
+      "password": "meeraa123",
+      "mobile": 8838186666,
+      "id": 3
+    },
+    {
+      "fullname": "sarvesh",
+      "email": "sarvesh@gmail.com",
+      "password": "sarvesh123",
+      "mobile": 9843075809,
+      "id": 4
+    }
+  ]
+}
